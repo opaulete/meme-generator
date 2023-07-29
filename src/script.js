@@ -8,6 +8,7 @@ const MAX_IMAGE_SIZE = 3 * 1024 * 1024;
 
 textInput.addEventListener('keyup', () => {
   memeText.innerHTML = textInput.value;
+  localStorage.setItem('memeText', textInput.value);
 });
 
 function errorMessage(message) {
@@ -30,10 +31,26 @@ function loadSelectedImage(file) {
     return;
   }
 
-  memeImage.src = URL.createObjectURL(image);
-  errorDiv.style.display = 'none';
+  const reader = new FileReader();
+  reader.onload = (event) => {
+    memeImage.src = event.target.result;
+    localStorage.setItem('memeImage', event.target.result);
+    errorMessage.style.display = 'none';
+  };
+  reader.readAsDataURL(image);
 }
 
 imageInput.addEventListener('change', (event) => {
   loadSelectedImage(event.target);
+});
+
+window.addEventListener('load', () => {
+  const storedImage = localStorage.getItem('memeImage');
+  const storedText = localStorage.getItem('memeText');
+
+  if (storedImage) memeImage.src = storedImage;
+
+  if (storedText) memeText.innerHTML = storedText;
+
+  textInput.value = '';
 });
