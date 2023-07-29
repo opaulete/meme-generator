@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1 id="title">Meme Generator</h1>
+  <p>Insert your photo, add text, and share!</p>
 
+  <div id="inputs">
+    <label for="image-input">Upload Image</label>
+    <input type="file" id="image-input" accept="image/*">
+    <input type="text" id="text-input" placeholder="meme text" maxlength="60">
+  </div>
+
+  <p>* Accepted extensions: .JPEG .PNG .GIF .WEBP</p>
+  <p>* Only 1 image at a time</p>
 </body>
 </html>
