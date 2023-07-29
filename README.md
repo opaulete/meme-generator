@@ -2,7 +2,7 @@
 
 Este é meu 5° projeto durante minha jornada na Trybe!
 
-O Meme Generator é uma aplicação que permite aos usuários criarem *memes* personalizados!
+O Meme Generator é uma aplicação que permite aos usuários criarem *memes* personalizados! Este é um side-project para continuar aprimorando minhas habilidades em HTML, CSS e JS. Nele, tive a oportunidade de trabalhar com manipulação de inputs e lógica para que os usuários possam fazer upload de arquivos locais, converter imagens em base64 para serem salvas no localStorage e permitir que os usuários façam o download do *meme* criado, usando uma compressão básica do próprio navegador.
 
 ## Estrutura do Repositório
 
@@ -48,3 +48,17 @@ O Meme Generator é uma aplicação que permite aos usuários criarem *memes* pe
 - O localStorage só aceita `string`, então é necessário codificar a imagem em **base64**;
 
 </details>
+
+## 4. Implementado um botão para o download do meme criado.
+
+<details>
+  <summary>A página possui um botão para fazer download do meme criado</summary><br/>
+
+- O botão possui o `id` `download-btn`, está abaixo do preview com o texto **Download Meme**;
+- O meme criado tem dimensões *600x400* e o nome sempre é 'meme.jpg';
+- A imagem inserida sempre fica centralizada, se a imagem não possuir as dimensões 600x400 o fundo é preenchido com a cor **branca**;
+- O texto do meme tem uma fonte Arial, 40px, com uma sombra **preta** de 5 pixels na horizontal, 5 pixels na vertical e um raio de desfoque de 5 pixels;
+
+</details>
+
+---

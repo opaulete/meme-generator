@@ -90,3 +90,26 @@ label {
   overflow-wrap: break-word;
   text-shadow: 5px 5px 5px black;
 }
+
+button {
+  height: 39.5px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #21f055;
+  box-shadow: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 400;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #15ba3e;
+  transition-duration: 500ms;
+}
