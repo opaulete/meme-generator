@@ -7,16 +7,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="title">Meme Generator</h1>
-  <p>Insert your photo, add text, and share!</p>
+  <main>
+    <h1 id="title">Meme Generator</h1>
+    <p>Insert your photo, add text, and share!</p>
 
-  <div id="inputs">
-    <label for="image-input">Upload Image</label>
-    <input type="file" id="image-input" accept="image/*">
-    <input type="text" id="text-input" placeholder="meme text" maxlength="60">
-  </div>
+    <div id="inputs">
+      <label for="image-input">Upload Image</label>
+      <input type="file" id="image-input" accept="image/*">
+      <input type="text" id="text-input" placeholder="meme text" maxlength="60">
+    </div>
+    <div id="error-message"></div>
 
-  <p>* Accepted extensions: .JPEG .PNG .GIF .WEBP</p>
-  <p>* Only 1 image at a time</p>
+    <p>* Accepted extensions: .JPEG .PNG .GIF .WEBP</p>
+    <p>* Only 1 image at a time</p>
+
+    <h1>Preview</h1>
+
+    <div id="meme-preview">
+      <img id="meme-image">
+      <p id="meme-text"></p>
+    </div>
+  </main>
 </body>
+<script src="script.js"></script>
 </html>

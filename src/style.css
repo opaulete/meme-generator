@@ -59,3 +59,34 @@ label {
   text-align: center;
   text-transform: uppercase;
 }
+
+#error-message {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  color: red;
+}
+
+#meme-preview {
+  display: flex;
+  width: 640px;
+  height: 480px;
+  box-sizing: content-box;
+  justify-content: center;
+  border: 2px dashed gray;
+  margin: 10px;
+}
+
+#meme-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#meme-text {
+  position: absolute;
+  max-width: 400px;
+  color: white;
+  font-size: 40px;
+  overflow-wrap: break-word;
+  text-shadow: 5px 5px 5px black;
+}
