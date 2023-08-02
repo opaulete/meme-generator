@@ -10,7 +10,7 @@ O Meme Generator é uma aplicação que permite aos usuários criarem *memes* pe
 
 ## Funcionalidades Implementadas
 
-## 1. Adicionado os inputs de texto e imagem.
+## Adicionado os inputs de texto e imagem.
 
 <details>
   <summary>A página contém um input para inserir texto e outro para fazer upload de imagem</summary><br/>
@@ -25,7 +25,7 @@ O Meme Generator é uma aplicação que permite aos usuários criarem *memes* pe
 
 </details>
 
-## 2. Adicionado um preview para a imagem e o texto inseridos.
+## Adicionado um preview para a imagem e o texto inseridos.
 
 <details>
   <summary>A página contém uma área com um preview do meme</summary><br/>
@@ -38,7 +38,7 @@ O Meme Generator é uma aplicação que permite aos usuários criarem *memes* pe
 
 </details>
 
-## 3. Implementado LocalStorage para a imagem e texto inseridos.
+## Implementado LocalStorage para a imagem e texto inseridos.
 
 <details>
   <summary>A imagem e o texto inseridos pelo usuário são salvas no localStorage</summary><br/>
@@ -49,7 +49,7 @@ O Meme Generator é uma aplicação que permite aos usuários criarem *memes* pe
 
 </details>
 
-## 4. Implementado um botão para o download do meme criado.
+## Implementado um botão para o download do meme criado.
 
 <details>
   <summary>A página possui um botão para fazer download do meme criado</summary><br/>
