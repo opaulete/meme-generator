@@ -13,6 +13,12 @@ textInput.addEventListener('keyup', () => {
 });
 
 function errorMessage(message) {
+  if (!message || message === undefined) {
+    errorDiv.innerHTML = '';
+    errorDiv.style.display = 'none';
+    return;
+  }
+
   errorDiv.innerText = message;
   errorDiv.style.display = 'block';
   errorDiv.style.margin = '10px';
@@ -32,12 +38,17 @@ function loadSelectedImage(file) {
     return;
   }
 
+  errorMessage();
+  downloadBtn.classList.remove('disabled');
+
   const reader = new FileReader();
+
   reader.onload = (event) => {
     memeImage.src = event.target.result;
     localStorage.setItem('memeImage', event.target.result);
     errorMessage.style.display = 'none';
   };
+
   reader.readAsDataURL(image);
 }
 
@@ -81,6 +92,11 @@ imageInput.addEventListener('change', (event) => {
 });
 
 downloadBtn.addEventListener('click', () => {
+  if (!memeImage.src) {
+    errorMessage('Please select an image before downloading');
+    return;
+  }
+
   const dataURL = createMemeImage();
   downloadMeme(dataURL);
 });
@@ -92,6 +108,8 @@ window.addEventListener('load', () => {
   if (storedImage) memeImage.src = storedImage;
 
   if (storedText) memeText.innerHTML = storedText;
+
+  if (!storedImage) downloadBtn.classList.add('disabled');
 
   textInput.value = '';
 });
