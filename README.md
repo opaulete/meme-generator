@@ -1,10 +1,20 @@
 # Project Meme Generator
 
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+## Link
+
+[meme-generator.vercel](https://paulo-meme-generator.vercel.app/)
+
+![Preview of Meme Generator Project](./meme-generator.png)
+
+## About
+
 This is my 5th project during my journey at Trybe!
 
 The Meme Generator is an application that allows users to create custom memes! This is a side project to continue improving my skills in HTML, CSS, and JS. In this project, I had the opportunity to work with input manipulation and logic so that users can upload local files, convert images to base64 to be saved in localStorage, and allow users to download the created meme using basic browser compression.
 
-## Repository Structure>
+## Repository Structure
 
 - The `src` folder contains all the code
 
@@ -21,7 +31,7 @@ The Meme Generator is an application that allows users to create custom memes! T
 
 - The image input has the `id` named `image-input`, and does not accept multiple files
 
-- `image-input` only accepts image files (.JPG .PNG .WEBP .GIFs)
+- `image-input` only accepts image files (.JPG .PNG .WEBP)
 
 - A limit of 3MB was set for the size of the image that can be inserted
 
@@ -29,7 +39,7 @@ The Meme Generator is an application that allows users to create custom memes! T
 </details>
 
 
-## Added a preview for the inserted image and text
+## Implemented a preview for the inserted image and text
 
 <details>
   <summary>
