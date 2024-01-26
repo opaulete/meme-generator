@@ -26,10 +26,10 @@ function errorMessage(message) {
 
 function loadSelectedImage(file) {
   const image = file.files[0];
-  const allowedFiles = ['image/jpeg', 'image/png', 'image/gif'];
+  const allowedFiles = ['image/jpeg', 'image/png'];
 
   if (!allowedFiles.includes(image.type)) {
-    errorMessage('Select a valid image type file (JPEG, PNG, GIF or WEBP)');
+    errorMessage('Select a valid image type file (JPEG, PNG or WEBP)');
     return;
   }
 
